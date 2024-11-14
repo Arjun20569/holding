@@ -1,0 +1,27 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+public class Recursion {
+    static int factorial(int n)          //using recurtion function
+    {
+        if(n==0 || n==1)
+            return 1;
+        else
+            return n*factorial(n-1);
+    }
+    static int factorial_iterative(int n)      //using iterative function
+    {
+        int product=1;
+        if(n==0 || n==1)
+            return 1;
+        else
+        for(int i=1;i<=n;i++)
+           product *=i;
+        return product;
+    }
+    public static void main(String[] args) {
+        int x=5;
+        System.out.println("facrotial of 5 is:"+factorial(x));
+        System.out.println("factorial os 5 is:"+factorial_iterative(x));
+    }
+}
